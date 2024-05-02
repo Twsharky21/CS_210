@@ -1,0 +1,186 @@
+
+.pirates-of-cydonia {
+    font-family: 'Pirates of Cydonia', sans-serif;               
+}
+
+body {
+    color: rgb(0, 0, 0);
+    background-image: url(PeerReview2BackgroundBW.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;     
+}
+
+.card1 {
+    min-width: 600px;
+    max-width: 600px; 
+    margin: 1px auto;
+    background-color: rgb(255, 255, 255); 
+    text-align: center;
+    border-radius: 20px;
+    padding: 3px;
+    font-family: 'Pirates of Cydonia', sans-serif;
+    opacity: .9;
+    box-sizing: border-box;
+}
+
+.card1border {
+    min-width: 600px; 
+    max-width: 650px;
+    margin: 1px auto;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(90deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    background-clip: padding-box; /* Ensures the background only fills the padding-box, not the border-box */
+    border-radius: 50px;
+    font-family: 'Pirates of Cydonia', sans-serif;
+    font-size: medium;
+    font-weight: lighter;
+    opacity: .9;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+
+}
+
+.card2 {
+    min-width: 100px; 
+    max-width: 1100px;
+    text-align: left;    
+    margin: 1px auto;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;    
+    font-family: 'Pirates of Cydonia', sans-serif;
+    font-size: medium;
+    font-weight:lighter;
+    opacity: .9;
+}
+
+.card2border {
+    min-width: 1100px; 
+    max-width: 1100px;
+    margin: 1px auto;
+    padding: 18px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(90deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    background-clip: padding-box; /* Ensures the background only fills the padding-box, not the border-box */
+    border-radius: 50px;
+    font-family: 'Pirates of Cydonia', sans-serif;
+    font-size: medium;
+    font-weight: lighter;
+    opacity: .9;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.card3 {
+    min-width: 100px; 
+    max-width: 1100px;
+    text-align: left;    
+    margin: 1px auto;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;    
+    font-family: 'Pirates of Cydonia', sans-serif;
+    font-size: medium;
+    font-weight:lighter;
+    opacity: .9;
+}  
+
+.card3border {
+    min-width: 1100px; 
+    max-width: 1100px;
+    margin: 1px auto;
+    padding: 18px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(90deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    background-clip: padding-box; /* Ensures the background only fills the padding-box, not the border-box */
+    border-radius: 50px;
+    font-family: 'Pirates of Cydonia', sans-serif;
+    font-size: medium;
+    font-weight: lighter;
+    opacity: .9;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.card4 {
+    min-width: 100px; 
+    max-width: 1100px;
+    text-align: left;    
+    margin: 1px auto;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;    
+    font-family: 'Pirates of Cydonia', sans-serif;
+    font-size: medium;
+    font-weight:lighter;
+    opacity: .9;
+}
+
+.card4border {
+    min-width: 1100px; 
+    max-width: 1100px;
+    margin: 1px auto;
+    padding: 18px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(90deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    background-clip: padding-box; /* Ensures the background only fills the padding-box, not the border-box */
+    border-radius: 50px;
+    font-family: 'Pirates of Cydonia', sans-serif;
+    font-size: medium;
+    font-weight: lighter;
+    opacity: .9;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.card5 {
+    min-width: 100px; 
+    max-width: 1100px;
+    text-align: left;    
+    margin: 1px auto;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;    
+    font-family: 'Pirates of Cydonia', sans-serif;
+    font-size: medium;
+    font-weight:lighter;
+    opacity: .9;
+}
+
+.card5border {
+    min-width: 1100px; 
+    max-width: 1100px;
+    margin: 1px auto;
+    padding: 18px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(90deg, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    background-clip: padding-box; /* Ensures the background only fills the padding-box, not the border-box */
+    border-radius: 50px;
+    font-family: 'Pirates of Cydonia', sans-serif;
+    font-size: medium;
+    font-weight: lighter;
+    opacity: .9;
+    box-sizing: border-box;
+}
+
+.tinycard {
+    min-width: 100px; /* Minimum width to start with */
+    max-width: 300px; /* Maximum width the card can expand to */
+    width: auto; /* Allows the width to adjust based on content size */
+    text-align: left;    
+    margin: 1px auto;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;    
+    font-family: 'Pirates of Cydonia', sans-serif;
+    font-size: medium;
+    font-weight: lighter;
+    opacity: .9;
+    display: inline-block; /* Makes the width only as wide as its content, with a minimum and maximum range */
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+    margin-top: 10px;
+    margin-left:27%;
+}
