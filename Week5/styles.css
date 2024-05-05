@@ -167,6 +167,7 @@ body {
 }
 
 .tinycard {
+    text-decoration: none;
     min-width: 100px; /* Minimum width to start with */
     max-width: 300px; /* Maximum width the card can expand to */
     width: auto; /* Allows the width to adjust based on content size */

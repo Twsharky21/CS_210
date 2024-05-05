@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'Antz';
+    src: url('HeraldGothicBold.otf');
+}
+
+@font-face {
+    font-family: 'AntzLight';
+    src: url('heraldgothic-light.otf');
+}
+
+@font-face {
+    font-family: 'BebasLight';
+    src: url('BebasNeue\ Light.otf');
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/*defining the color palette for our website using CSS Custom Properties or variables*/
+:root {
+    --primary-color: #5B4B49; /* Dark brown from the logo */
+    --secondary-color: #D3A588; /* Light brown from the logo */
+    --accent-color: #7A9E7E; /* Green accent from the logo */
+    --text-color: #FAFAFA; /* For light text color */
+    --background-color: #f0f0f0; /* Light background color */
+    --border-color: #ccc; /* Border color */
+
+}
+
+/* Reset margins and paddings */
+* {
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Container that wraps the whole page */
+.page-container {
+    max-width: 1000px; /* or any other max-width you prefer */
+    margin: 20px auto; /* top and bottom margin */
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: var(--primary-color) 0 0 10px; /* Using primary color for shadow */
+    min-height: 424px;
+    background: rgba(178, 204, 178, 0.2)    
+}
+
+/*The body styles apply to everything within the <body> tags*/
+body {
+    background-image: url(SkyGrassDirt.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+}
+
+/*effects the flex container column settings <row>*/
+.flex-container-row {
+    display: flex;
+    justify-content: center;
+}
+
+/*effects the flex container column settings <col>*/
+.flex-container-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Logo image styling in <div class=""> and <img */
+.logo-container img {
+    float: left; /* Aligns the logo to the left */
+    margin-right: 20px; /* Adds space between the logo and the text */
+    width: 250px; /* Adjust to your preferred size */
+    height: auto;
+}
+
+/* Apply color scheme and modernize navbar itself. Effect <nav class="">*/
+.tea-flex-container {   
+    border-radius: 10px; 
+    padding: 10px 0;
+    justify-content: center;
+    display: flex;
+}
+
+/* This affects the items inside the navbar with <a> tag*/
+.tea-flex-container a {
+    font-family:'BebasLight';
+    font-size: 50px;
+    font-weight: lighter;
+    color: #010110;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* This also affects the items inside the navbar. adds hover effect*/
+.tea-flex-container a:hover {
+    background-color:#455883;
+    color: var(--text-color);
+    border-radius: 10px;
+}
+
+
+/* Title styling */
+.title {
+    color: #011004; /* Color that matches your logo/theme */
+    text-align: center; /* Center the title */
+    margin-top: 8px; /* Adjust the margin as needed */
+}
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+/* Apply color scheme and modernize navbar itself. Effect <nav class="">*/
+.topic-page-container {   
+    display: flex;
+    background: rgba(132, 161, 189, 0.7);
+    padding: 20px;
+    border-radius: 10px;    
+    box-shadow: var(--primary-color) 0 0 10px; /* Using primary color for shadow */
+    margin-top: 10px; /* Space from the header */
+    overflow: hidden;
+}
+
+.left-container, .right-container {
+    flex: 1;
+    padding: 10px;
+}
+
+.left-container {
+    margin-right: 10px; /* Add margin between the containers */
+    font-family:'BebasLight';
+    font-size: 38px;
+    font-weight: 200px;
+}
+
+.right-container {
+    margin-left: 10px; /* Add margin between the containers */
+}
+
+/* Optional: Adjust the size of the images */
+.right-container img {
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+
+}
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+.topic-page-body {
+    font-family:'Bebas Neue';
+    font-size: 30px;
+    font-weight:lighter;
+    color: #000000;
+    margin: 20px 0; /* Space above and below the text */
+}
+
+.thin {
+    font-weight: 200;
+}
+
+.topic-page-title {
+    font-family:'Bebas Neue';
+    font-size: 50px;
+    text-align: center;
+    color: #000000;
+    margin: 20px 0; /* Space above and below the text */
+}
+
+/* container for picture*/
+.topic-container2 {
+    max-width: 900px;
+    display: flex; /* enables flexbox layout */
+    align-items:center; /* centers items vertically */
+    justify-content: start; /* aligns content to the start of the container */
+    gap: 20px; /* adds space between the image and the text */
+}
+
+/*directly affects picture*/
+.topic-container2 img {
+    width: 400px; /* sets the image width */
+    height: auto; /* maintains aspect ratio */
+    border-radius: 30px; /* keeps the rounded corners if desired */
+    padding: 15px;
+}
+
+.topic-container2 .text-content {
+    flex-grow: 1; /* allows text container to fill remaining space */
+    font-size: 17px;
+}
+
+.clipz {
+    min-width: 10px; /* Minimum width to start with */
+    max-width: 300px; /* Maximum width the card can expand to */
+    margin-top: 20px;
+    font-family: 'AntzLight', normal;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    background: rgba(132, 161, 189, 0.7);
+    border-radius: 10px;    
+    opacity: .9;
+    display: inline-block; /* Makes the width only as wide as its content, with a minimum and maximum range */
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+    box-shadow: var(--primary-color) 0 0 5px; /* Using primary color for shadow */
+
+}
+
+.clipz a {
+    font-size: 38px;
+    font-weight: lighter;
+    color: #010110;
+    text-decoration: none;
+    padding: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.clipz a:hover {
+    background-color:#455883;
+    color: var(--text-color);
+    border-radius: 10px;
+}
+
+
+*********************************************************************************
+
+/* ALL MENU RELATED */
+.group-container {
+    background: rgba(132, 161, 189, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--primary-color) 0 0 10px; /* Using primary color for shadow */
+    margin-top: 30px; /* Space from the header */    
+}
+
+.dragon-teas .grouplist {    
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    display:flex;
+    flex-direction: column; /* Stacks child elements (containers) vertically */
+    align-items:stretch; /* Centers them horizontally */
+}
+
+.groupMember {
+    background: url(BlackBackground.png);
+    color:#000100;
+    padding: 1px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.groupMemberTitle {
+    font-family: 'Antz', bold;
+    font-size: 120px;
+    color: #010110;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center;
+}
+
+.groupMemberTitle a {
+    font-family: 'Antz', normal;
+    font-size: 40px;
+    color: #010110;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.groupMemberUnderTitle {
+    font-family:'BebasLight';
+    font-weight: bold;
+    font-size: 65px;
+    text-align: center;
+    color: #010110;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 2px solid black; /* Creates a 2px solid line beneath the text */
+
+}
+
+.groupMemberUnderTitle2 {
+    font-family:'BebasLight';
+    font-weight: bold;
+    font-size: 37px;
+    text-align: center;
+    color: #010110;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .grouplist {
+        grid-template-columns: 1fr; /* Stack the teas on smaller screens */
+    }
+}
+
+.custom-list {
+    list-style-type: none; /* Remove default bullet points */
+}
+
+.custom-list li {
+    position: relative; /* Position the bullet marker relative to the list item */
+    padding-left: 50px; /* Add space for the bullet marker */
+}
+
+.custom-list li:before {
+    content: ""; /* Add content for the bullet marker */
+    position: absolute; /* Position the bullet marker absolutely */
+    left: 0;/* Position the bullet marker at the left of the list item */
+    top: 13px; /* Position the bullet marker at the top of the list item */
+    width: 40px; /* Set the width of the bullet marker */
+    height: 40px; /* Set the height of the bullet marker */
+    background-image: url('anticon.png'); /* Use your downloaded icon as the bullet marker */
+    background-size: cover; /* Ensure the icon covers the bullet marker area */
+}
+************************************
+
+.discussion-page-container {   
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    background: rgba(132, 161, 189, 0.7);
+
+}
+
+.discussion {
+    font-family: 'BebasLight';
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+    color: #010110;
+    text-decoration: none;
+    padding: 10px;
+    background: rgba(132, 161, 189, 0.7);
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.discussion2 {
+    font-family: 'BebasLight';
+    font-size: 40px;
+    text-align: let;
+    color: #010110;
+    text-decoration: none;
+    padding: 10px;
+    background: rgba(132, 161, 189, 0.7);
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+
