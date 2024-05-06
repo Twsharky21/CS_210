@@ -86,12 +86,13 @@ body {
     padding: 10px 0;
     justify-content: center;
     display: flex;
+    
 }
 
 /* This affects the items inside the navbar with <a> tag*/
 .tea-flex-container a {
     font-family:'BebasLight';
-    font-size: 50px;
+    font-size: 48px;
     font-weight: lighter;
     color: #010110;
     text-decoration: none;
@@ -117,12 +118,13 @@ body {
 /* Apply color scheme and modernize navbar itself. Effect <nav class="">*/
 .topic-page-container {   
     display: flex;
-    background: rgba(132, 161, 189, 0.7);
     padding: 20px;
     border-radius: 10px;    
-    box-shadow: var(--primary-color) 0 0 10px; /* Using primary color for shadow */
+    box-shadow: var(--primary-color) 0 0 8px; /* Using primary color for shadow */
     margin-top: 10px; /* Space from the header */
     overflow: hidden;
+    background-color:rgba(248, 243, 243, 0.2);
+
 }
 
 .left-container, .right-container {
@@ -203,13 +205,11 @@ body {
     text-align: center;
     text-decoration: none;
     padding: 10px;
-    background: rgba(132, 161, 189, 0.7);
     border-radius: 10px;    
-    opacity: .9;
     display: inline-block; /* Makes the width only as wide as its content, with a minimum and maximum range */
     box-sizing: border-box; /* Includes padding and border in the width calculation */
     box-shadow: var(--primary-color) 0 0 5px; /* Using primary color for shadow */
-
+    background-color:rgba(248, 243, 243, 0.2);
 }
 
 .clipz a {
@@ -232,10 +232,9 @@ body {
 
 /* ALL MENU RELATED */
 .group-container {
-    background: rgba(132, 161, 189, 0.7);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: var(--primary-color) 0 0 10px; /* Using primary color for shadow */
+    box-shadow: var(--primary-color) 0 0 8px; /* Using primary color for shadow */
     margin-top: 30px; /* Space from the header */    
 }
 
@@ -329,33 +328,44 @@ body {
     display: flex;
     flex-direction: column; /* Arrange items vertically */
     align-items: center; /* Center items horizontally */
-    background: rgba(132, 161, 189, 0.7);
+    background: rgba(115, 153, 189, 0.7);
 
 }
 
 .discussion {
     font-family: 'BebasLight';
     font-size: 70px;
-    font-weight: bolder;
     text-align: center;
     color: #010110;
     text-decoration: none;
+    background-color:rgba(248, 243, 243, 0.2);
     padding: 10px;
-    background: rgba(132, 161, 189, 0.7);
     padding: 20px;
-    border-radius: 10px; 
+    border-radius: 10px;
+    box-shadow: var(--primary-color) 0 0 8px; /* Using primary color for shadow */ 
+    margin-bottom: 12px;
 }
 
 .discussion2 {
     font-family: 'BebasLight';
     font-size: 40px;
+    background-color:rgba(248, 243, 243, 0.2);
     text-align: let;
     color: #010110;
     text-decoration: none;
     padding: 10px;
-    background: rgba(132, 161, 189, 0.7);
     padding: 20px;
-    border-radius: 10px; 
+    border-radius: 10px;
+    box-shadow: var(--primary-color) 0 0 8px; /* Using primary color for shadow */ 
+ 
 }
 
+.vl {
+    border-left: 6px solid rgb(0, 0, 0);
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 113px;
+  }
 
