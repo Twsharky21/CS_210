@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Berliner Fraktur';
+    src: url('BerlinerFraktur.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url('PirateShip.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    width: 60%; /* Adjust the width based on your preference */
+    height: 105vh; /* Adjust the height based on your preference */
+    background-image: url('ScrollNoBG.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Organizes children vertically */
+    overflow: hidden; /* Prevents content from spilling out */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+.scroll-container {
+    font-family: 'Berliner Fraktur', normal;
+    text-align: center;
+    width: 100%; /* Full width of the image-container */
+    padding: 31%; /* Adequate padding within the container */
+    box-sizing: border-box; /* Includes padding in width calculation */
+
+}
+
+.scroll-container p {
+    color: #000000;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.list-container {
+    font-family: 'Berliner Fraktur', serif; /* Apply the custom font */
+    color: #000000; /* Consistent text color */
+    margin-top: 20px; /* Space from the previous content */
+    font-size: 23px;
+}
+
+.list-container ul {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0; /* Removes default padding */
+}
+
+.list-container li {
+    margin-bottom: 5px; /* Space between list items */
+    line-height: 1.5; /* Improved line spacing for readability */
+}
+
+.list-container a {
+    color: rgb(122, 2, 2); /* Stylish link color */
+    text-decoration: none; /* No underline */
+}
+
+.list-container a:hover {
+    text-decoration: underline; /* Underline on hover for better interaction feedback */
+}
+
+.tinycard {
+    position: fixed; /* Fixed position to keep it at the bottom left regardless of scrolling */
+    left: 0; /* Aligns the container to the left edge of the viewport */
+    bottom: 0; /* Aligns the container to the bottom of the viewport */
+    padding-left: 10px; /* Padding around the text */
+    z-index: 1000; /* Ensures it sits on top of other elements if overlapping */
+}
+
+.tinycard a {
+    color: #e8e8f3; /* Dark text color for visibility */
+    text-decoration: none; /* No underline by default */
+    font-size: 15px; /* Smaller font size for subtlety */
+
+}
+
+.tinycard a:hover {
+    text-decoration: underline; /* Underline on hover for better interaction feedback */
+}
