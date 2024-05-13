@@ -36,21 +36,14 @@ body {
     font-family: 'Berliner Fraktur', normal;
     text-align: center;
     width: 100%; /* Full width of the image-container */
-    padding: 31%; /* Adequate padding within the container */
+    padding: 32%; /* Adequate padding within the container */
     box-sizing: border-box; /* Includes padding in width calculation */
 
-}
-
-.scroll-container p {
-    color: #000000;
-    font-size: 24px;
-    line-height: 1.5;
 }
 
 .list-container {
     font-family: 'Berliner Fraktur', serif; /* Apply the custom font */
     color: #000000; /* Consistent text color */
-    margin-top: 20px; /* Space from the previous content */
     font-size: 23px;
 }
 
@@ -60,8 +53,8 @@ body {
 }
 
 .list-container li {
-    margin-bottom: 5px; /* Space between list items */
-    line-height: 1.5; /* Improved line spacing for readability */
+    margin-bottom: 3px; /* Space between list items */
+    line-height: .9px;
 }
 
 .list-container a {
