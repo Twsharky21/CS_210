@@ -124,3 +124,40 @@ body {
     color: black; /* Color of text and links when highlighted */
     background: lightblue; /* Background of text and links when highlighted */
 }
+
+.glow {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow .8s ease-in-out infinite alternate;
+    -moz-animation: glow .8s ease-in-out infinite alternate;
+    animation: glow .8s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #FFC107, 0 0 40px #FFC107, 0 0 50px #FFC107;
+    }
+  }
+  
+  @-moz-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #FFC107, 0 0 40px #FFC107, 0 0 50px #FFC107;
+    }
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #FFC107, 0 0 40px #FFC107, 0 0 50px #FFC107;
+    }
+  }
+  
