@@ -1,0 +1,121 @@
+/* FONTS */
+@font-face {
+    font-family: 'Chomsky';
+    src: url('Chomsky.otf');
+}
+
+@font-face {
+    font-family: 'Bolyar';
+    src: url('FMBolyar.otf');
+}
+
+/* Reset margins and paddings */
+* {
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/********** Page Container Styles **********/
+
+/* Page container */
+.page-container {
+    position: relative; /* Ensure the container is a positioned element */
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: #ffffff 0 0 10px;
+    min-height: 424px;
+    background: rgba(175, 179, 175, 0.95);
+}
+
+.vine-overlay {
+    position: absolute;
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 250px; /* Adjust as needed */
+    height: auto;
+    pointer-events: none; /* Ensure the vine image doesn't interfere with other elements */
+    transform: translate(-40%, -15%); /* Fine-tune positioning if necessary */
+}
+
+.content {
+    position: relative; /* Ensure content stays above the vine image */
+    z-index: 1;
+}
+
+
+/********** Body Styles **********/
+
+/* Body background */
+body {
+    background-image: url(tempBack.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+
+/********** Navbar Styles **********/
+
+/* Navbar container */
+.nav-flex-container-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: #ffffff 0 0 10px;
+    background: rgba(175, 179, 175, 0.95);
+    width: fit-content; /* Adjust width to fit content */
+    padding: 10px; /* Equal padding on all sides */
+}
+
+.nav-flex-container {
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+}
+
+/* This affects the items inside the navbar with <a> tag */
+.nav-flex-container a {
+    font-family: 'Chomsky';
+    font-size: 24px;
+    font-weight: lighter;
+    color: #fdfdff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 10px;
+}
+
+/* This also affects the items inside the navbar. adds hover effect */
+.nav-flex-container a:hover {
+    background-color: #ffffff;
+    color: var(--text-color);
+    border-radius: 10px;
+}
+
+/********** Title Styles **********/
+
+/* Title styling */
+.title1 {
+    font-family: 'Chomsky';
+    font-size: 100px;
+    color: #050505;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.title2 {
+    font-family: 'Bolyar';
+    color: #011004;
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+
