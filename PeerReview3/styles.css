@@ -13,18 +13,21 @@
     src: url('Delius.ttf');
 }
 
-/********** Body Styles **********/
-
-/* Body background */
+/********** Body **********/
 body {
-    background-image: url(DinoRicky.png);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    background: url('DinoRicky2.png') no-repeat center center fixed;
     background-size: cover;
 }
 
-/********** CARD 1 **********/
+/********** Container Labels **********/
+.label {
+    font-style: 'GreatVibes';
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
 
+/********** CARD 1 **********/
 .card1 {
     line-height: .8;
     min-width: 40%; 
@@ -78,7 +81,6 @@ body {
     font-family: 'GreatVibes';
 }
 
-
 /********** CARD 4 **********/
 .card4 {
     min-width: 40%; 
@@ -109,12 +111,12 @@ body {
 
 }
 
-/********** Conversation Container **********/
 .card5border {
     padding: 12px;
     font-family: 'GreatVibes';
 }
 
+/********** Conversation Container **********/
 .conversation-container {
     font-family: Arial, sans-serif; /* Default font if needed */
     line-height: .9; /* Adjust the value as needed */
@@ -129,7 +131,7 @@ body {
 
 .person2 {
     color: rgb(27, 27, 184);
-    font-family: 'Deluge';
+    font-family: 'Delius';
     font-size: 20px;
 }
 
@@ -138,3 +140,5 @@ body {
     font-family:'Times New Roman', Times, serif;
     font-size: 20px;
 }
+
+
