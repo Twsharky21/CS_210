@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'GreatVibes';
+    src: url('GreatVibes-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Playpen';
+    src: url('PlaypenSans.ttf');
+}
+
+@font-face {
+    font-family: 'Delius';
+    src: url('Delius.ttf');
+}
+
+/********** Body Styles **********/
+
+/* Body background */
+body {
+    background-image: url(DinoRicky.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+/********** CARD 1 **********/
+
+.card1 {
+    line-height: .8;
+    min-width: 40%; 
+    max-width: 40%;
+    border-radius: 20px;
+    background: url(golfBall2.jpg);  
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 15px 0; 
+}
+
+.card1border {
+    font-family: 'GreatVibes';
+    font-size: 25px;
+    text-align: center;
+    padding: 12px;
+}
+
+/********** CARD 2 **********/
+.card2 {
+    min-width: 40%; 
+    max-width: 40%;
+    border-radius: 20px;
+    background: url(golfBall2.jpg);  
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 15px 0; 
+}
+
+.card2border {
+    font-family: 'GreatVibes';
+    padding: 12px;
+}
+
+/********** CARD 3 **********/
+.card3 {
+    min-width: 40%; 
+    max-width: 40%;
+    border-radius: 20px;
+    background: url(golfBall2.jpg);  
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 15px 0; 
+}
+
+.card3border {
+    padding: 12px;
+    font-family: 'GreatVibes';
+}
+
+
+/********** CARD 4 **********/
+.card4 {
+    min-width: 40%; 
+    max-width: 40%;
+    border-radius: 20px;
+    background: url(golfBall2.jpg);  
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 15px 0; 
+}
+
+.card4border {
+    padding: 12px;
+    font-family: 'GreatVibes';
+}
+
+/********** CARD 5 **********/
+.card5 {
+    min-width: 40%; 
+    max-width: 40%;
+    border-radius: 20px;
+    background: url(golfBall2.jpg);  
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 15px 0; 
+
+}
+
+/********** Conversation Container **********/
+.card5border {
+    padding: 12px;
+    font-family: 'GreatVibes';
+}
+
+.conversation-container {
+    font-family: Arial, sans-serif; /* Default font if needed */
+    line-height: .9; /* Adjust the value as needed */
+}
+
+.person1 {
+    color: rgb(19, 128, 19);
+    font-family: 'Playpen';
+    font-size: 20px;
+
+}
+
+.person2 {
+    color: rgb(27, 27, 184);
+    font-family: 'Deluge';
+    font-size: 20px;
+}
+
+.person3 {
+    color: rgb(189, 13, 13);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
