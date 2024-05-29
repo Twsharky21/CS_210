@@ -141,4 +141,27 @@ body {
     font-size: 20px;
 }
 
+/**********INVISIBLE STUFF********/
 
+.invisible-text,
+.invisible-text a { /* This targets both the text and links within the element */
+    color: rgba(255, 255, 255, 0); /* Text is transparent */
+    user-select: text; /* Ensures text and links are selectable */
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+.invisible-text::selection,
+.invisible-text a::selection { /* This targets selections for both text and links */
+    color: black; /* Color of text and links when highlighted */
+    background: lightblue; /* Background of text and links when highlighted */
+}
+
+.hidden-container {
+    position: absolute;
+    right: 13%; /* Adjust based on your preference */
+    top: 37%;
+    width: 20%; /* Adjust the width as necessary */
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+}
