@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
 /* FONTS */
 @font-face {
     font-family: 'Chomsky';
-    src: url('Chomsky.otf');
+    src: url('fonts/Chomsky.otf');
 }
 
 @font-face {
     font-family: 'Bolyar';
-    src: url('FMBolyar.otf');
+    src: url('fonts/FMBolyar.otf');
 }
 
 /* Reset margins and paddings */
@@ -16,12 +18,15 @@
     box-sizing: border-box;
 }
 
+
+
+
 /********** Page Container Styles **********/
 
 /* Page container: This container holds the main content and adjusts to the size of the contained images */
 .page-container {
     position: relative; /* Ensure the container is a positioned element */
-    max-width: 1000px;
+    max-width: 48%;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -57,7 +62,7 @@
 
 /* Body background: Set the background image and its properties */
 body {
-    background-image: url(GothHouseBackground.png);
+    background-image: url(images/GothHouseBackground.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -108,17 +113,63 @@ body {
 /********** Title Styles **********/
 
 /* Title styling for the main title (Remington's Shadow Manor) */
-.title1 {
-    font-family: 'Chomsky';
-    font-size: 100px;
-    color: #050505;
+.title-container {
+    position: relative;
     text-align: center;
-    margin-top: 12px;
     background-color: rgba(0, 0, 0, 0.7);
-
 }
 
-/* Title styling for the subtitle or secondary title */
+.title1-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.title1-shadow h1 {
+    font-family: 'Chomsky';
+    font-size: 90px;
+    color: #000; /* Dark text color */
+    text-shadow: 2px 2px 4px #fff; /* Light shadow */
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+
+.title1 {
+    font-family: 'Chomsky'; /* Sets the font to Chomsky */
+    font-weight: 100;
+    text-align: center; /* Centers the text horizontally */
+    margin: 20px auto; /* Adds margin around the container and centers it horizontally */
+    display: flex; /* Applies flexbox layout */
+    flex-direction: column; /* Arranges children in a column */
+    align-items: center; /* Centers the children horizontally */
+    justify-content: center; /* Centers the children vertically */
+    width: 80%; /* Adjusts the width to 80% of the parent container */
+    padding: 20px; /* Adds padding inside the container */
+    border-radius: 10px; /* Adds rounded corners */
+    position: relative;
+    z-index: 2; /* Ensure it is above the background text */
+}
+
+.title1 h1 {
+    background-image: url('gifs/smoky7.gif'); /* Sets the background image to the local GIF */
+    background-size: cover; /* Ensures the background image covers the entire text */
+    color: transparent; /* Makes the text color transparent */
+    -moz-background-clip: text; /* Clips the background to the text for Firefox */
+    -webkit-background-clip: text; /* Clips the background to the text for Webkit browsers */
+    background-clip: text; /* Standard property for background clip */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    font-size: 90px; /* Sets the font size to 60px */
+}
+
+
+
+/* Title styling for the subtitle or secondary title at the top the of page container */
 .title2 {
     font-family: 'Bolyar';
     color: #011004;
@@ -137,6 +188,23 @@ body {
     max-width: 800px; /* Limit the maximum width */
     aspect-ratio: 3 / 2; /* Maintain 3:2 aspect ratio */
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*SignPost Image*/
+/* Fixed image container */
+.fixed-image-container {
+    position: fixed;
+    bottom: -22%; /* Adjust the top position as needed */
+    left: 8%; /* Adjust the right position as needed */
+    width: 15%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.fixed-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensure the image fits within the container */
 }
 
 /* Staff image: Style the image and add transition for the zoom effect */
@@ -182,5 +250,61 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 200px); /* Adjust based on header/footer size */
+    height: auto;
+}
+
+
+/*Wine Containers*/
+
+.wine-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw; /* Width relative to viewport width */
+    height: 10vh; /* Height relative to viewport height */
+    max-width: 100%; /* Ensure it does not exceed 100% of the parent container */
+    max-height: 100%; /* Ensure it does not exceed 100% of the parent container */
+    background-image: url('gifs/EtherealBlood.gif'); /* Background image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-repeat: no-repeat; /* No repeat of the image */
+    background-position: center; /* Center the image */
+    border-radius: 20px;
+    padding: 20px; /* Optional padding */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Specific container styles for different GIFs */
+.container-1 {
+    background-image: url('gifs/EtherealBlood.gif');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.container-2 {
+    background-image: url('gifs/GoldenAle.gif');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.container-3 {
+    background-image: url('gifs/GalaxySparks2.gif');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.container-4 {
+    background-image: url('gifs/PurpleWine.gif');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.container-5 {
+    background-image: url('gifs/GalaxySparks3.gif');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
